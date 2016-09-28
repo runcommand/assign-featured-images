@@ -10,8 +10,25 @@ Quick links: [Using](#using) | [Installing](#installing) | [Support](#support)
 ## Using
 
 ~~~
-wp assign-featured-images 
+wp assign-featured-images [--attachment=<attachment>] [--only-missing] [--dry-run]
 ~~~
+
+Default behavior is to randomly assign attachments as featured images
+to all posts of post types that support thumbnails.
+
+Use `--only-missing` to only replace featured images on posts where the
+existing value is missing or invalid.
+
+**OPTIONS**
+
+	[--attachment=<attachment>]
+		Assign a specified attachment. Defaults to randomly-selected attachments.
+
+	[--only-missing]
+		Only replace featured images where existing value is missing or invalid.
+
+	[--dry-run]
+		Test the operation without performing database alterations.
 
 ## Installing
 
