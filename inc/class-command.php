@@ -77,7 +77,11 @@ class Command {
 		WP_CLI::log( "Found {$count} posts to inspect for featured images." );
 
 		$modified = 0;
-		foreach( $post_ids as $post_id ) {
+		foreach( $post_ids as $i => $post_id ) {
+			if ( $i && $i % 100 === 0 ) {
+				WP_CLI\Utils\wp_clear_object_cache();
+			}
+
 			$missing = $invalid = false;
 			$thumbnail_id = get_post_thumbnail_id( $post_id );
 			if ( $thumbnail_id ) {
