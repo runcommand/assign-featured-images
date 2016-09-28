@@ -1,6 +1,6 @@
 {
     "name": "runcommand/assign-featured-images",
-    "description": "Assign featured images to post types that support thumbnails.",
+    "description": "Assign featured images to posts that support thumbnails.",
     "homepage": "https://runcommand.io/wp/assign-featured-images/",
     "license": "MIT",
     "authors": [

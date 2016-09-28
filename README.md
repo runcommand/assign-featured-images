@@ -1,7 +1,7 @@
 runcommand/assign-featured-images
 =================================
 
-Assign featured images to post types that support thumbnails.
+Assign featured images to posts that support thumbnails.
 
 [![Build Status](https://travis-ci.org/runcommand/assign-featured-images.svg?branch=master)](https://travis-ci.org/runcommand/assign-featured-images)
 
