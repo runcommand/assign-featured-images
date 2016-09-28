@@ -13,11 +13,15 @@ Quick links: [Using](#using) | [Installing](#installing) | [Support](#support)
 wp assign-featured-images [--attachment=<attachment>] [--only-missing] [--dry-run]
 ~~~
 
+**WARNING**: This command will irrevocably change your database. Please
+make sure to `wp db export --tables=wp_postmeta` before running.
+
 Default behavior is to randomly assign attachments as featured images
 to all posts of post types that support thumbnails.
 
-Use `--only-missing` to only replace featured images on posts where the
-existing value is missing or invalid.
+WXR import get mangled and only some of the posts in your dev environment
+have featured images? Use `--only-missing` to only replace featured
+images on posts where the existing value is missing or invalid.
 
 **OPTIONS**
 
